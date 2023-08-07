@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+}
+
+.grid-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cell{
+    border: 1px solid;
+    height: 45px;
+    width: 60px;
+}
+
+#rows{
+    display: flex;
+}
