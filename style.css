@@ -1,23 +1,49 @@
 body{
     display: flex;
     flex-direction: column;
+    margin: 0;
     height: 100vh;
-    margin: 0px;
+    box-sizing: border-box;
 }
 
-.grid-container{
-    /* border: 1px solid red; */
+.header{
+    display: flex;
+    justify-content: center;
+    font-family:monospace;
+    background-color: bisque;
+}
+
+.main-body{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.cell{
-    border: 1px solid;
-    height: 45px;
-    width: 60px;
+.grid-container{
+    border: 1px solid red;
+    display: grid;
 }
 
-#rows{
+.grid-cell{
+    /* border: 1px solid; */
+}
+
+.grid-row{
+    width: fit-content;
     display: flex;
+}
+
+.buttons-container{
+    border: 1px solid;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pxl-btn{
+
+}
+
+.clr-btn{
+    
 }
