@@ -14,4 +14,4 @@ Welcome to the Doodle Board project! This interactive web application allows use
 
 ## Demo
 
-You can check out the live demo of the Doodle Board [Doodle Board](https://headlessnode.github.io/Doodle-board/)
+You can check out the live demo of the [Doodle Board](https://headlessnode.github.io/Doodle-board/)
