@@ -2,26 +2,35 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    height: 100vh;
+    height: 100%vh;
     box-sizing: border-box;
+    background-color: #2E294E;
 }
 
 .header{
     display: flex;
     justify-content: center;
     font-family:monospace;
-    background-color: bisque;
+    background-color: #E5E5E5;
+    box-shadow: 0px 2px 10px 2px black;
 }
 
 .main-body{
+    padding-top: 80px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+
 .grid-container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px hsl(0,0%,10%);
     display: grid;
+    margin-top: 50px;
 }
 
 .grid-cell{
@@ -34,16 +43,46 @@ body{
 }
 
 .buttons-container{
-    border: 1px solid;
+    height: 500px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.pxl-btn{
 
+.clr-btn, .pxl-btn, .rnd-color-btn, .eraser-btn, .black-clr-btn, .shader-btn{
+    border: none;
+    border-radius: 25px;
+    background-color: dodgerblue;
+    padding: 20px;
 }
 
-.clr-btn{
-    
+.clr-btn:hover, .pxl-btn:hover, .rnd-color-btn:hover, .eraser-btn:hover, .black-clr-btn:hover, .shader-btn:hover{
+    animation: zoomin 0.3s forwards;
+}
+
+@keyframes zoomin{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+.clr-btn:active, .pxl-btn:active, .rnd-color-btn:active, .eraser-btn:active, .black-clr-btn:active, .shader-btn:active {
+    background-color: #1f618d;
+  }
+
+.footer{
+    border: 1px solid;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #E5E5E5;
 }
